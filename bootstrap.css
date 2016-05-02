@@ -6,7 +6,7 @@
 
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
+  
 h1 {
   text-align: center;
   font-size: 55px;
@@ -22,7 +22,7 @@ h2 {
 
 }
 h3 {
-  font-size: 22px;
+  font-size: 27px;
   font-family: font-family: 'Roboto', sans-serif;
 }
 h4 {
@@ -31,7 +31,10 @@ h4 {
   letter-spacing: 2px;
   margin: 60px 0px 10px 0px; 
 }
-
+h5 {
+  font-size: 23px;
+ font-family: 'Abel', sans-serif; 
+}
 h6 {
   text-align: center;
   font-size: 20px;
@@ -41,10 +44,20 @@ h6 {
   margin: 0;
   padding: 0;
 }
+p {
+  font-size: 20px;
+}
 footer {
   text-align: center;
 }
 
+#grades {
+    opacity: 1.0;
+}
+
+#grades:hover {
+    opacity: 0.7;
+}
 #circles {
   text-align: center;
 }
