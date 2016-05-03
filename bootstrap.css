@@ -62,26 +62,8 @@ footer {
   text-align: center;
 }
 
-#part1 {
-  border: 2px solid;
-  height: 200px;
-}
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
+
 
 audio,
 canvas,
