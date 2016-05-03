@@ -62,6 +62,9 @@ footer {
   text-align: center;
 }
 
+#part1 {
+  border: 1px solid;
+}
 article,
 aside,
 details,
