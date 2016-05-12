@@ -16,6 +16,11 @@ h1 {
   color: red;
 }
 
+h1:hover {
+  
+   font-size: 80px;
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
