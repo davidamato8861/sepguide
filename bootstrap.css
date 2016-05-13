@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+body {
+  background-image: url("pictures/bg-pic.jpg");
+}
 
 h1 {
   text-align: center;
