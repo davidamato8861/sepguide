@@ -35,11 +35,10 @@ $(document).ready(function(){
     // Store hash
     var hash = this.hash;
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    // The optional number (700) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
-    }, 800, function(){
+    }, 700, function(){
    
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
@@ -80,7 +79,7 @@ $(document).ready(function(){
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#grades-images">Topics</a>
@@ -104,9 +103,13 @@ $(document).ready(function(){
         </div>
         <!-- /.container -->
     </nav>
+ 
     
     
     <div class="heading" id="home">
+
+    <div class="heading"id="home">
+
         <h1>HSTAT SEP ULTIMATE SURVIVAL KIT</h1>
         <h6>Advice for Upcoming SEP Students</h6>
     </div>
@@ -263,7 +266,7 @@ $(document).ready(function(){
                     </ul> 
                   <li><i>Collaboration</i></li>
                   <ul style="list-style-type:circle">
-                  <li>A great way to interact with other coders and develp something great</li>
+                  <li>A great way to interact with other coders and develop something great</li>
                     </ul> 
                   <li><i>Communication (in/outside of class)</i></li>
                   <ul style="list-style-type:circle">
@@ -359,7 +362,6 @@ $(document).ready(function(){
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-
 
 
 </body>
