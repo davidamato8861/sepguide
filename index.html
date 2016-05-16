@@ -21,30 +21,29 @@
     <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
+                // Store hash
+                var hash = this.hash;
 
-    // Store hash
-    var hash = this.hash;
+                // The optional number (700) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 700, function() {
 
-    // The optional number (700) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 700, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-});
-</script>
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            });
+        });
+    </script>
 
 
 </head>
@@ -73,7 +72,7 @@ $(document).ready(function(){
 
 
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -102,163 +101,163 @@ $(document).ready(function(){
         </div>
         <!-- /.container -->
     </nav>
- 
-    
-    
+
+
+
     <div class="heading" id="home">
 
-    <div class="heading"id="home">
+        <div class="heading" id="home">
 
-        <h1>HSTAT SEP ULTIMATE SURVIVAL KIT</h1>
-        <h6>Advice for Upcoming SEP Students</h6>
-    </div>
- 
-    
-
-    <!-- Page Content -->
-    <div class="container">
-        <!-- Jumbotron Header -->
-        <header class="jumbotron hero-spacer">
-            <h2>WHAT IS THE SEP PROGRAM?</h2>
-            <h5>The Software Engineering Pilot (SEP) is a computer science and software engineering class for students from grades 6 to 12. The program curriculum varies from computer programming, robotics, web design, mobile development, physical computing and SO MUCH MORE.<br>It allows for students to develop problem-solving skills, collaborate with others, build up leadership skills, prepare for the outside world and show off their creativity.</h5>
-        </header>
-
-        <div>
-
-            <div class="container" id="grades-images">
-                <h4>Topics</h4>
-                <br>
-
-                <div class="col-sm-6">
-                    <p><strong>9th GRADE</strong></p>
-                    <img src="pictures/10th-grade.jpg" id="grades" class="img-thumbnail">
-                </div>
-
-                <div class="col-sm-6">
-                    <p><strong>10th GRADE</strong></p>
-                    <img src="pictures/9th-grade.jpg" id="grades" class="img-thumbnail">
-                </div>
-                <div class="col-sm-6">
-                    <p><strong>11th GRADE</strong></p>
-                    <img src="pictures/11th-grade.jpg" id="grades" class="img-thumbnail">
-                </div>
-
-                <div class="col-sm-6">
-                    <p><strong>12th GRADE</strong></p>
-                    <img src="pictures/comingsoon.jpg" id="grades" class="img-thumbnail">
-                </div>
-            </div>
-
-            <!-- Title -->
-            <div class="row" id="opportunities">
-                <div class="col-lg-12">
-                    <h4>Opportunities</h4>
-                </div>
-            </div>
-            <!-- /.row -->
-            <br>
-            <!-- Page Features -->
-            <div class="row text-center">
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/field-trip.jpg">
-                        <div class="caption">
-                            <h3>Field Trips</h3>
-                            <h5>SEP students go on field trips in order to learn more about programming languages and meet tech-related companies.</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/hackathons.jpg">
-                        <div class="caption">
-                            <h3>Hackathons</h3>
-                            <h5>SEP students travel to different events, one being a hackathon, which allows students to develop useful applications.</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/internships.jpg">
-                        <div class="caption">
-                            <h3>Internships</h3>
-                            <h5>SEP students will take part in internships, where they get hands-on experience learning more about code, robotics, and etc.<br></h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/showcases.jpg">
-                        <div class="caption">
-                            <h3>Year-end Showcases</h3>
-                            <h5>SEP students have the opportunity to present their showcases, where students show off their work at the end of the year.</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/events.JPG">
-                        <div class="caption">
-                            <h3>Events</h3>
-                            <h5>SEP students will be involved in a variety of events while working in a group and meeting new people.<br><br></h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="pictures/summer-programs.jpg">
-                        <div class="caption">
-                            <h3>Summer Programs</h3>
-                            <h5>SEP students will have chances to get extra practice for previously learned programming languages.<br><br></h5>
-                        </div>
-                    </div>
-                </div>
+            <h1>HSTAT SEP ULTIMATE SURVIVAL KIT</h1>
+            <h6>Advice for Upcoming SEP Students</h6>
+        </div>
 
 
-            </div>
-            <!-- /.row -->
 
-            <div class="container" id="ppgrades">
-                <h4>Grades</h4>
-                <br>
-                <div class="gradess">
-                    <h2>HELP! WHAT ABOUT GRADES?</h2>
-                    <img src="pictures/PupilPath-White.png" alt="Pupilpath" width="170px">
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Jumbotron Header -->
+            <header class="jumbotron hero-spacer">
+                <h2>WHAT IS THE SEP PROGRAM?</h2>
+                <h5>The Software Engineering Pilot (SEP) is a computer science and software engineering class for students from grades 6 to 12. The program curriculum varies from computer programming, robotics, web design, mobile development, physical computing and SO MUCH MORE.<br>It allows for students to develop problem-solving skills, collaborate with others, build up leadership skills, prepare for the outside world and show off their creativity.</h5>
+            </header>
+
+            <div>
+
+                <div class="container" id="grades-images">
+                    <h4>Topics</h4>
                     <br>
-                    <br>
-                    <div class="alert alert-success" role="alert">
-                        <p>90 - 100
-                            <br><strong> Well done!</strong>&nbsp Keep up the good work.</div>
-                    <div class="alert alert-info" role="alert">
-                        <p>80 - 90
-                            <br> <strong> You're almost there!</strong>&nbsp Continue doing what you're doing.</p>
+
+                    <div class="col-sm-6">
+                        <p><strong>9th GRADE</strong></p>
+                        <img src="pictures/10th-grade.jpg" id="grades" class="img-thumbnail">
                     </div>
-                    <div class="alert alert-warning" role="alert">
-                        <p>70 - 80
-                            <br> <strong>Keep going!</strong>&nbsp You can do it.</p>
+
+                    <div class="col-sm-6">
+                        <p><strong>10th GRADE</strong></p>
+                        <img src="pictures/9th-grade.jpg" id="grades" class="img-thumbnail">
                     </div>
-                    <div class="alert alert-danger" role="alert">
-                        <p>
-                            < 65 <br> <strong>You could do better!</strong>&nbsp Ask the teacher for ways to improve.</p>
+                    <div class="col-sm-6">
+                        <p><strong>11th GRADE</strong></p>
+                        <img src="pictures/11th-grade.jpg" id="grades" class="img-thumbnail">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p><strong>12th GRADE</strong></p>
+                        <img src="pictures/comingsoon.jpg" id="grades" class="img-thumbnail">
                     </div>
                 </div>
-            </div>
-            <br>
 
-            <div class="container" id="skills">
-                <h4>Skills</h4>
+                <!-- Title -->
+                <div class="row" id="opportunities">
+                    <div class="col-lg-12">
+                        <h4>Opportunities</h4>
+                    </div>
+                </div>
+                <!-- /.row -->
                 <br>
-                <div class="jumbotron">
-                    <h2>Helpful skills for now and the future!</h2>
-                    <ul>
+                <!-- Page Features -->
+                <div class="row text-center">
 
-                        <h5>
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/field-trip.jpg">
+                            <div class="caption">
+                                <h3>Field Trips</h3>
+                                <h5>SEP students go on field trips in order to learn more about programming languages and meet tech-related companies.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/hackathons.jpg">
+                            <div class="caption">
+                                <h3>Hackathons</h3>
+                                <h5>SEP students travel to different events, one being a hackathon, which allows students to develop useful applications.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/internships.jpg">
+                            <div class="caption">
+                                <h3>Internships</h3>
+                                <h5>SEP students will take part in internships, where they get hands-on experience learning more about code, robotics, and etc.<br></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/showcases.jpg">
+                            <div class="caption">
+                                <h3>Year-end Showcases</h3>
+                                <h5>SEP students have the opportunity to present their showcases, where students show off their work at the end of the year.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/events.JPG">
+                            <div class="caption">
+                                <h3>Events</h3>
+                                <h5>SEP students will be involved in a variety of events while working in a group and meeting new people.<br><br></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 hero-feature">
+                        <div class="thumbnail">
+                            <img src="pictures/summer-programs.jpg">
+                            <div class="caption">
+                                <h3>Summer Programs</h3>
+                                <h5>SEP students will have chances to get extra practice for previously learned programming languages.<br><br></h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.row -->
+
+                <div class="container" id="ppgrades">
+                    <h4>Grades</h4>
+                    <br>
+                    <div class="gradess">
+                        <h2>HELP! WHAT ABOUT GRADES?</h2>
+                        <img src="pictures/PupilPath-White.png" alt="Pupilpath" width="170px">
+                        <br>
+                        <br>
+                        <div class="alert alert-success" role="alert">
+                            <p>90 - 100
+                                <br><strong> Well done!</strong>&nbsp Keep up the good work.</div>
+                        <div class="alert alert-info" role="alert">
+                            <p>80 - 90
+                                <br> <strong> You're almost there!</strong>&nbsp Continue doing what you're doing.</p>
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                            <p>70 - 80
+                                <br> <strong>Keep going!</strong>&nbsp You can do it.</p>
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            <p>
+                                < 65 <br> <strong>You could do better!</strong>&nbsp Ask the teacher for ways to improve.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="container" id="skills">
+                    <h4>Skills</h4>
+                    <br>
+                    <div class="jumbotron">
+                        <h2>Helpful skills for now and the future!</h2>
+                        <ul>
+
+                            <h5>
                   <li><i>Pseudocode</i></li>
                   <ul style="list-style-type:circle">
                   <li>A way to plan and brainstorm simpler steps</li>
@@ -292,17 +291,17 @@ $(document).ready(function(){
                   <li>Search up other great sites to help you</li>
                     </ul> 
                 </h5>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container" id="resources">
-                <h4>Resources</h4>
-                <br>
-                <div class="sources">
-                    <h2>Take advantage of all kinds of resources!</h2>
-                    <ul>
-                        <h5>
+                <div class="container" id="resources">
+                    <h4>Resources</h4>
+                    <br>
+                    <div class="sources">
+                        <h2>Take advantage of all kinds of resources!</h2>
+                        <ul>
+                            <h5>
                  <li>Google is your best friend: <a href="https://www.google.com/" target="_blank">Google</a></li>
                  <li>W3schools has tutorials for every topic: <a href="http://www.w3schools.com/" target="_blank">W3schools</a></li>
                  <li>With Gliffy, you can plan your site: <a href="https://www.gliffy.com/" target="_blank">Gliffy</a></li>
@@ -319,48 +318,48 @@ $(document).ready(function(){
 
 
 
-                    </ul>
+                        </ul>
 
 
 
-                </div>
-
-
-
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-
-
-            <div id="credits">
-
-                <div id="circles">
-                    <img src="pictures/David.png" class="img-responsive img-circle" alt="David Amato">
-                    <img src="pictures/sharon.png" class="img-responsive img-circle" alt="Sharon Wong">
-                </div>
-
-                <hr>
-
-                <!-- Footer -->
-                <footer>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright &copy; Start Bootstrap 2014</p>
-                        </div>
                     </div>
-                </footer>
 
+
+
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+
+
+                <div id="credits">
+
+                    <div id="circles">
+                        <img src="pictures/David.png" class="img-responsive img-circle" alt="David Amato">
+                        <img src="pictures/sharon.png" class="img-responsive img-circle" alt="Sharon Wong">
+                    </div>
+
+                    <hr>
+
+                    <!-- Footer -->
+                    <footer>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Copyright &copy; Start Bootstrap 2014</p>
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
+                <!-- /.container -->
             </div>
-            <!-- /.container -->
-        </div>
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
 
 
 </body>
