@@ -43,6 +43,16 @@
                 });
             });
         });
+
+        var timeOut;
+
+        function scrollToTop() {
+            if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+                window.scrollBy(0, -50);
+                timeOut = setTimeout('scrollToTop()', 10);
+            }
+            else clearTimeout(timeOut);
+        }
     </script>
 
 
@@ -82,7 +92,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#top" onclick="scrollToTop()">Home</a>
                     </li>
                     <li>
                         <a href="#grades-images">Topics</a>
@@ -267,9 +277,9 @@
 
 
 
-                           
 
-                                <h5>
+
+                            <h5>
                 <div class="container">    
                <div href="#demo" data-toggle="collapse">
                   <li>Pseudocode</li>
@@ -351,17 +361,17 @@
                 </h5>
 
                         </ul>
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container" id="resources">
-                    <h4>Resources</h4>
-                    <br>
-                    <div class="sources">
-                        <h2>Take advantage of all kinds of resources!</h2>
-                        <ul>
-                            <h5>
+            <div class="container" id="resources">
+                <h4>Resources</h4>
+                <br>
+                <div class="sources">
+                    <h2>Take advantage of all kinds of resources!</h2>
+                    <ul>
+                        <h5>
                  <li>Google is your best friend: <a href="https://www.google.com/" target="_blank">Google</a></li>
                  <li>W3schools has tutorials for every topic: <a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
                  <li>With Gliffy, you can plan your site: <a href="https://www.gliffy.com/" target="_blank">Gliffy</a></li>
